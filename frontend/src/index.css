@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@layer base {
+    /* WebKit tabanlı tarayıcılarda (Chrome, Safari vb.) slider thumb */
+    .range-input::-webkit-slider-thumb {
+        @apply h-9 w-9 bg-white rounded-full appearance-none cursor-pointer;
+        margin-top: -2px; /* Track yüksekliğine göre ayarlama yap */
+    }
+
+    /* Firefox için */
+    .range-input::-moz-range-thumb {
+        @apply h-8 w-8 bg-white rounded-full appearance-none cursor-pointer;
+    }
+
+    /* IE / Edge (eski sürümler) için */
+    .range-input::-ms-thumb {
+        @apply h-8 w-8 bg-white rounded-full appearance-none cursor-pointer;
+    }
+
+    /* Range track'in dolu kısmının rengini ayarlamak istersen: */
+
+}
